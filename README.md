@@ -31,3 +31,18 @@ Each parity bit checks specific data bits, enabling detection of tow-bits errors
 
 <img src = "ham_img/hamming.jpg" width = "550">
 
+
+## How to Run🏃‍♂️
+
+1. Make sure you have Icarus Verilog (IVL) installed.  
+2. Open a terminal in the folder containing the files:  
+   `fsm.sv`, `hamming.sv`, `register.sv`, `testbench.sv`.  
+3. Compile the code with:  
+   ```
+   iverilog -o simv testbench.sv fsm.sv register.sv hamming.sv
+   ```  
+4. Run the simulation:  
+   ```
+   vvp simv
+   ```  
+5. Output will appear directly in the console. Inputs are predefined in the testbench to simulate user input.
